@@ -20,8 +20,9 @@ ALTER TABLE public.student REPLICA IDENTITY FULL
 Tell for which table we have to setup the debezium connector. check the debeziu.json config file 
 POST request to deezium endpoint giving the json file having connectino to postgres db
 command below using POST request: 
-*curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 127.0.0.1:8083/connectors/ --data "debezium.json"*
+curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 127.0.0.1:8083/connectors/ --data "@debezium.json"
 
+<img width="1253" alt="image" src="https://user-images.githubusercontent.com/72122903/204280713-11664898-968e-4109-85ae-95d81049927e.png">
 
 
 ## Command to run 
